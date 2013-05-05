@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>CUTC HACKATHON - RAFFLE</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/collection.js"></script>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]--></head>
+
+<body>
+<div id="wrap">
+
+<nav id="mainnav">
+
+<h1 id="textlogo">
+WHOOOOOOOO<span>RAFFRAFF</span>
+</h1>
+<ul>
+
+	<li><a href="index.html">Home</a></li>
+    <li class="active"><a href="login.html">Login</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Contact</a></li>
+
+</ul>
+</nav>
+
+<section id="content" class="normalpage"><section id="page">
+  <section id="fourcols">
+<header class="subhead">
+<h2>Log in or Register</h2>
+</header>
+<div class="clear"></div>
+
+
+<section>
+
+<!--Login-->
+
+<form method="post" action="" name="login">
+<div id="label">User Name:</div>
+<input type="text" name="user" class="input" AUTOCOMPLETE='OFF'/>
+<div id="label">Password:</div>
+<input type="password" name="password" class="input" AUTOCOMPLETE='OFF'/>
+<div id="forgot" style='display:none'><a href="forgot.php" style="color:#006699">"Forgot password?"</a></div>
+
+<div id="button">
+<input type="submit" class="submit" value="LOG IN">
+</div>
+</div>
+
+</section>
+
+<div class="clear"></div>
+
+<section>
+  <!--Sign up-->
+<div id="regbox" style="display:none">
+<form method="post" action="" name="reg" id="signup">
+<div id="label">Email:</div>
+<input type="text" name="email" id="email" class="input" AUTOCOMPLETE="OFF" />
+<div id="estatus"></div>
+<div id="label">User Name:</div>
+<input type="text" name="username" id="username" class="input" AUTOCOMPLETE='off' />
+<div id="status"></div>
+<div id="label">Password:</div>
+<input type="password" name="password" id="password" class="input" AUTOCOMPLETE="OFF" />
+
+<div id="button">
+<input type="submit" class="reg" value="CREATE">
+</div>
+
+<div style='text-align:center;margin:10px'>
+<a href='linkedin_login.php'>Login with Linkedin</a>
+</div>
+<div style='text-align:center;margin:10px'>
+<a href='microsoft_login.php'>Login with Microsoft</a>
+</div>
+<div style='text-align:center;margin:10px'>
+<a href='google_login.php'>Login with Google</a>
+</div>
+
+</form>
+</div>
+</section>
+<div class="clear"></div>
+</section>
+</section>
+</section>
+</div>
+
+<footer>
+<div id="bottom">
+<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> |<a href="#"> Support</a> | <a href="#">Products</a> | <a href="#">Login</a>
+<div class="clear"></div>
+</div>
+<div id="credits"> 2013 &copy; All Rights Reserved. </div>
+</footer>
+
+</body>
+</html>
