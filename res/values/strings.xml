@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PickMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="member">Business</string>
+    <string name="user">User</string>
+    <string name="usernameHint">Enter Username Here</string>
+    <string name="passwordHint">Password</string>
+    <string name="pick">PICK</string>
+    <string name="me">ME</string>
+    <string name="facebook">Facebook:</string>
+    <string name="twitter">Twitter:</string>
+    <string name="instagram">Instragram:</string>
+    <string name="saveChanges">Save Changes</string>
+
+</resources>

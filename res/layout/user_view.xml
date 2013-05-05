@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/first"
+ 	   	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        >
+    <TextView 
+        android:id="@+id/twitter"
+        android:textColor="#FF8900"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twitter"/>
+    
+     <EditText
+        android:id="@+id/twitterProf"
+        android:layout_toRightOf="@id/twitter"
+        android:textColor="#FFFFFF"
+        android:layout_width = "400dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:inputType="text"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:id="@+id/second">
+	
+    <TextView 
+        android:id="@+id/facebook"
+        android:textSize="25sp"
+        android:layout_below="@id/twitter"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp"
+        android:textColor="#FF8900"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook"/>
+    
+     <EditText
+        android:id="@+id/facebookProf"
+        android:layout_toRightOf="@id/facebook"
+        android:layout_below="@id/twitterProf"
+        android:layout_width = "400dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:inputType="text"/>        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/instagram"
+        android:textColor="#FF8900"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp"
+        android:layout_below="@id/facebook"
+        android:textSize="25sp"
+       	android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instagram"/>
+        
+    <EditText
+        android:id="@+id/instagramProf"
+        android:layout_toRightOf="@id/instagram"
+        android:layout_below="@id/twitterProf"
+        android:layout_width = "400dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:inputType="text"/>
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/saveChanges"
+        android:text="@string/saveChanges"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#FF9800"/>
+        
+
+</LinearLayout>

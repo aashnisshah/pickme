@@ -1,0 +1,65 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width ="fill_parent"
+    android:layout_height = "fill_parent"
+    android:orientation = "vertical">
+    
+    <TextView
+        android:id="@+id/logo"
+        android:text="@string/pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="150sp"
+        android:textColor="#FF8900"/>
+   
+    <TextView
+        android:id="@+id/me"
+        android:text="@string/me"
+        android:textSize="150sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/logo"/>
+    
+    <EditText
+        android:id="@+id/userNameField"
+        android:layout_width = "300dp"
+        android:layout_below="@id/logo"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:inputType="textEmailAddress"
+        android:hint="@string/usernameHint"/>
+    
+        <EditText
+        android:id="@+id/passwordField"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameField"
+        android:layout_width = "300dp"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:hint="@string/passwordHint"/>"
+    
+    <Button 
+        android:id="@+id/selectUser"
+        android:layout_below="@id/passwordField"
+        android:layout_width ="wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="@+string/user"
+        android:textSize="24sp"
+        android:onClick="launchUserActivity"
+        android:layout_centerInParent="true"/>
+    
+    <Button
+        android:id="@+id/selectMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/member"
+        android:textSize="24sp"
+        android:onClick="launchMemberActivity"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/selectUser"/>"
+    
+</RelativeLayout>
